@@ -3,12 +3,13 @@ from fpl import FPL
 import aiohttp
 import asyncio
 
+# async def main(event, context):
 async def main():
-
     session = aiohttp.ClientSession()
     fpl = FPL(session)
-    players = await fpl.get_players()
+    players = await fpl.get_players(return_json=True)
     await session.close()
+
 
     body = {
         "players":players
@@ -19,7 +20,7 @@ async def main():
         "statusCode":200,
         "body":players
     }
-    print(response)
+    print(players)
     return response
 
 
@@ -46,4 +47,5 @@ async def main():
 #     """
 if __name__ == "__main__":
 
+    # asyncio.run(main(event,context))
     asyncio.run(main())

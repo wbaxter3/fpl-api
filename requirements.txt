@@ -1,4 +1,2 @@
-aiohttp==3.6.2
-asyncio==3.4.3
+
 fpl==0.6.25
-requests==2.24.0
