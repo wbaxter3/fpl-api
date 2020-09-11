@@ -1,2 +1,2 @@
-
-fpl==0.6.25
+requests==2.24.0
+dynamodb_json==1.3
