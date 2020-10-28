@@ -1,2 +1,6 @@
 requests==2.24.0
 dynamodb_json==1.3
+understat==0.1.3
+aiohttp==0.3.0
+beautifulsoup4==4.9.2
+asyncio==3.4.3
